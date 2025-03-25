@@ -49,6 +49,7 @@ if(loading){
       {user?.email && <p className="hidden  md:flex">Welcome {"  "}{user.email.split('@')[0]}</p>}
       {  user?.email? <button className="border p-1 border-blue-500" onClick={handleLogout}>Logout</button>:<Link to='/login' className="border p-1 border-blue-500" >LogIn</Link>}
       <Link to='/' className="border p-1 border-blue-500" >Home </Link>
+      <Link to='/dynamicform' className="border p-1 border-blue-500" >Form  </Link>
   
       <button
       onClick={() => setDarkMode(!darkMode)}

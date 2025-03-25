@@ -14,6 +14,7 @@ import AddData from './comonent/AddData';
 import EditData from './comonent/EditData';
 import UserDasbord from './comonent/UserDasbord';
 import BlogData from './comonent/BlogData';
+import Form from './comonent/authentification/Form';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
       path: "/adddata",
       element:<AddData></AddData>
+    },
+      {
+      path: "/dynamicform",
+      element:<Form></Form>
     },
       {
       path: "/edit/:id",
